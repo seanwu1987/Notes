@@ -1,0 +1,17 @@
+name: .theanorc.txt
+location:  users\[name]\
+============================
+[blas]
+ldflags=
+
+[global]
+device = gpu
+floatX = float32
+
+[nvcc]
+fastmath = True
+flags =-LC:\Anaconda\libs
+compiler_bindir=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\amd64
+
+[gcc]
+cxxflags = -IC:\Anaconda\MinGW\include
